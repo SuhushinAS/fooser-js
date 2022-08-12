@@ -4,12 +4,22 @@
   {{/ modules/layout/header/index }}
 {{/inline}}
 {{#> modules/layout/layout/index }}
-  <div>
-    {{#> modules/frame/link/index name="fooser" value="history" }}
-      history
-    {{/ modules/frame/link/index }}
-    {{#> modules/frame/link/index name="fooser" value="about" }}
-      about
-    {{/ modules/frame/link/index }}
+  <div class="fooser-home">
+    <div class="fooser-home__box">
+      {{> modules/fooser/players/index }}
+    </div>
+    <div class="fooser-home__box">
+      {{> modules/fooser/score/index }}
+    </div>
+    {{> modules/flex/spacer/index }}
+    <div class="fooser-home__box">
+      {{> modules/fooser/game/index }}
+    </div>
+    <div class="fooser-home__box">
+      {{> modules/fooser/timer/index }}
+    </div>
+    <div class="fooser-home__box">
+      {{> modules/fooser/timer-buttons/index }}
+    </div>
   </div>
 {{/ modules/layout/layout/index }}

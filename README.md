@@ -1,4 +1,4 @@
-# HTML Layout kit
+# Fooser
 
 Окружение для создания HTML вёрстки
 

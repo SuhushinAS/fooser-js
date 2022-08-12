@@ -1,3 +1,14 @@
-.fooser-home {
+@import (reference) 'src/style/mixins';
 
+.fooser-home {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: @grid-right;
+  padding-top: @grid-left;
+
+  &__box {
+    padding-bottom: @grid-right;
+    padding-top: @grid-left;
+  }
 }
