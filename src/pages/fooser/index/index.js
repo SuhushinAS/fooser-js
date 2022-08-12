@@ -1,9 +1,0 @@
-import 'modules/common/frame';
-import 'modules/common/frame-button';
-import 'modules/fooser/about';
-import 'modules/fooser/history';
-import 'modules/fooser/home';
-import 'modules/layout/footer';
-import 'modules/layout/header';
-import 'modules/layout/layout';
-import './style.less';

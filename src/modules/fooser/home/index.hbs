@@ -1,11 +1,15 @@
-<div class="fooser-home">
-  Fooser home
+{{#*inline "layout-header"}}
+  {{#> modules/layout/header/index }}
+    <h1>Fooser</h1>
+  {{/ modules/layout/header/index }}
+{{/inline}}
+{{#> modules/layout/layout/index }}
   <div>
-    {{#> modules/common/frame-button/index name="fooser" value="history" }}
+    {{#> modules/frame/link/index name="fooser" value="history" }}
       history
-    {{/ modules/common/frame-button/index }}
-    {{#> modules/common/frame-button/index name="fooser" value="about" }}
+    {{/ modules/frame/link/index }}
+    {{#> modules/frame/link/index name="fooser" value="about" }}
       about
-    {{/ modules/common/frame-button/index }}
+    {{/ modules/frame/link/index }}
   </div>
-</div>
+{{/ modules/layout/layout/index }}

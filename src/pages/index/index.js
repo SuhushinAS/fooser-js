@@ -1,4 +1,5 @@
-import 'modules/layout/footer';
-import 'modules/layout/header';
-import 'modules/layout/layout';
+import 'modules/frame/content';
+import 'modules/fooser/home';
+import 'modules/fooser/history';
+import 'modules/fooser/about';
 import './style.less';

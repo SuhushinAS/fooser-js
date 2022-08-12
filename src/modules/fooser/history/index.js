@@ -1,3 +1,6 @@
+import 'modules/frame/link';
+import 'modules/layout/header';
+import 'modules/layout/layout';
 import {component} from 'utils/component';
 import './style.less';
 
@@ -6,11 +9,11 @@ component(
   class {
     /**
      * Конструктор класса для примера.
-     * @param {*} exampleDefault Элемент.
+     * @param {*} root Элемент.
      * @return {void}
      */
-    constructor(exampleDefault) {
-      this.exampleDefault = exampleDefault;
+    constructor(root) {
+      this.root = root;
     }
   }
 );

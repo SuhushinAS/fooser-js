@@ -1,14 +1,13 @@
-{{#> modules/layout/default/index }}
-  <div class="page page_gray page-index">
-    <h1>HTML Layout Kit</h1>
-    <div class="page__block page__block_offset">
-      <ul>
-        {{# each menu}}
-          <li>
-            <a href="{{this.link}}">{{this.title}}</a>
-          </li>
-        {{/each}}
-      </ul>
-    </div>
+{{#> modules/layout/html/index }}
+  <div class="page page_gray page-fooser">
+    {{#> modules/frame/content/index checked=true name="fooser" value="home" }}
+      {{> modules/fooser/home/index }}
+    {{/ modules/frame/content/index }}
+    {{#> modules/frame/content/index name="fooser" value="history" }}
+      {{> modules/fooser/history/index }}
+    {{/ modules/frame/content/index }}
+    {{#> modules/frame/content/index name="fooser" value="about" }}
+      {{> modules/fooser/about/index }}
+    {{/ modules/frame/content/index }}
   </div>
-{{/ modules/layout/default/index }}
+{{/ modules/layout/html/index }}
