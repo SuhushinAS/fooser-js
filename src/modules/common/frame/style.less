@@ -1,0 +1,15 @@
+.frame {
+  &__radio {
+    display: none;
+  }
+  &__radio:not(:checked) + &__content {
+    display: none;
+  }
+  &__content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
